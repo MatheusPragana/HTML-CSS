@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídia HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em dipositivos diferentes ou diminua e aumente seu navegador</p>
+    <picture>
+        <source media="(max-width:850px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1150px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexivel">
+    </picture>   
+    <h1>Reproduzindo Áudio</h1>
+    <audio preload="metadata" controls  loop>
+        <source src="audio.ogg" type="audio/mpeg">
+        <source src="audio.ogg" type="audio/ogg">
+        <source src="audio.ogg" type="audio/wav">
+
+        <p>Infelizmente seu arquivo não consegue reproduzir áudio. <a href="audio.ogg">Click aqui para baixar o arquivo MP3</a></p>
+    </audio>
+
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <video controls preload="metadata" width="500">
+        <source src="Meu-Video.mp4.mp4" type="video/mp4">
+        <source src="Meu-Video.webm.webm" type="video/webm">
+        <p>Seu navegador não compatibilidade para  reprodução de vídeos.</p>
+    </video>
+
+    <h1>Inserindo vídeo do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=L7r9iiOOPUpgt1qA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

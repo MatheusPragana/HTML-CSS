@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /* Um link clicado vai mudar de cor*/
+        a:visited{
+            color:darkred;
+        }
+         /* Quando passar o mouse em cima vai seguir as configurações abaixo*/
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+         /* Ao clicar vai ficar amarelo*/
+        a:active{
+            color:yellow;
+        }
+        a::after{
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li> <a href="https://github.com/gustavoguanabara/html-css" target="_blank" rel="external" >Repositório GitHub</a></li>
+        <li> <a href="https://www.youtube.com/@CursoemVideo" target="_blank" rel="external">Canal do Youtube</a> </li>
+        <li> <a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-15-aula-04-pseudo-elementos-em-css/" target="_blank" rel="external">Site do Curso em vídeo</a></li>
+    </ul>
+</body>
+</html>
