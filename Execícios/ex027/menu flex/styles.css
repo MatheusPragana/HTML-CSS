@@ -12,6 +12,7 @@ body{
     background-color: lightgray;
     height: 100vh;
     width: 100vw;
+   
 }
 header{
     background-color: gray;
@@ -53,8 +54,10 @@ header nav a:hover{
 
 main{
     background-color: white;
-    margin: 10px;
+    margin: 10px auto;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.322);
+    max-width: 1000px;
+   
 }
